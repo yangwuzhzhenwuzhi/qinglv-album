@@ -145,7 +145,7 @@ async function ensureProvinceMap(province) {
 
 async function ensureEcharts() {
   if (!echartsPromise) {
-    echartsPromise = import('../node_modules/echarts/dist/echarts.esm.min.mjs');
+    echartsPromise = import('https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.esm.min.js');
   }
   return echartsPromise;
 }

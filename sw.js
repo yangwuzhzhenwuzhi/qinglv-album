@@ -48,7 +48,6 @@ const APP_SHELL = [
   './src/wheel.js',
   './manifest.webmanifest',
   './icons/icon.svg',
-  './node_modules/echarts/dist/echarts.esm.min.mjs',
   ...GEOJSON_FILES
 ];
 
