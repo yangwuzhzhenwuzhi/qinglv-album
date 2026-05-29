@@ -1,0 +1,19 @@
+{
+  "name": "我们的旅行相册",
+  "short_name": "旅行相册",
+  "description": "情侣旅行足迹、照片墙和去哪玩转盘",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fffaf5",
+  "theme_color": "#d95f67",
+  "icons": [
+    {
+      "src": "./icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
