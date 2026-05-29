@@ -108,7 +108,7 @@ export function buildCitySeriesData(features, records) {
 async function ensureChinaMap() {
   const echarts = await ensureEcharts();
   if (!chinaMapPromise) {
-    chinaMapPromise = fetch('./node_modules/china-geojson/src/geojson/china.json')
+    chinaMapPromise = fetch('https://cdn.jsdelivr.net/npm/china-geojson/src/geojson/china.json')
       .then((response) => {
         if (!response.ok) throw new Error('中国地图数据加载失败');
         return response.json();
@@ -129,7 +129,7 @@ async function ensureProvinceMap(province) {
   if (!provinceMapPromises.has(province)) {
     provinceMapPromises.set(
       province,
-      fetch(`./node_modules/china-geojson/src/geojson/${file}`)
+      fetch(`https://cdn.jsdelivr.net/npm/china-geojson/src/geojson/${file}`)
         .then((response) => {
           if (!response.ok) throw new Error(`${province}城市地图数据加载失败`);
           return response.json();

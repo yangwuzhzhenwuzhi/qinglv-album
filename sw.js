@@ -1,4 +1,4 @@
-const CACHE_NAME = 'couple-travel-album-v1';
+const CACHE_NAME = 'couple-travel-album-v4';
 const GEOJSON_FILES = [
   './node_modules/china-geojson/src/geojson/jiang_su_geo.json',
   './node_modules/china-geojson/src/geojson/an_hui_geo.json',
